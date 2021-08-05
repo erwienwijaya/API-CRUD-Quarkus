@@ -1,7 +1,5 @@
 package org.crudapi;
 
-
-
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -48,8 +46,8 @@ public class TagResource {
     public Response create(Tag tag) {
         tagRepository.persist(tag);
         if(tagRepository.isPersistent(tag)) {
-            return Response.created(URI.create("/tags" + tag.getId())).build();
-        }
+            return Response.ok(tag).status(201).build();
+        }    
         return Response.status(Response.Status.BAD_REQUEST).build();
     }
 
