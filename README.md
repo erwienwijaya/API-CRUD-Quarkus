@@ -4,8 +4,17 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+
 ## Requirement
- - JavaSE 16
+ - Java 16
+ - Quarkus 2.0
+ - ORM Hibernate Panache
+ - JDBC-MySQL
+
+ ## Git Pull
+```sh
+git clone https://github.com/erwienwijaya/API-CRUD-Quarkus.git <new_directory>
+```
 
 ## Running the application in dev mode
 
